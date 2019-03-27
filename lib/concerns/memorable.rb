@@ -10,4 +10,9 @@ module ClassMethods
   end
 
 end
+
+module InstanceMethods
+  def initialize
+    self.class.all << self
+  end
 end
